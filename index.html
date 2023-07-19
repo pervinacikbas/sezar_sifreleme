@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şifreleme</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="JsSifre.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+    .btn:hover{
+    color: black;
+    background-color: white;
+    border-color: blue;
+}
+    </style>
+</head>
+<body style="background-color: darkgray;">
+    <div class="container" style="padding-left: 30%;
+    padding-top: 20%;">
+        <div class="row align-items-center">
+            <div class="col align-self-center">
+                <div class="position-absolute top-30 start-50 translate-middle">
+        <div id="password-box">
+            <input type="text" id="inputPassword" placeholder="Please Enter A Password" style="width: 300px; height: 30px; font-size: 16px;">
+            <button type="button" id="btn" class="btn btn-primary"  onclick="encryptPassword()">Create</button>
+            <button type="button" id="btn" class="btn btn-primary" onclick="clearPassword()">Clear</button>
+        </div>
+        <div id="compile-box" style="margin-top: 20px;">
+            <input type="text" id="inputCompile" placeholder="Please Enter A Compile of Password" style="width: 300px; height: 30px; font-size: 16px;">
+            <button type="button" id="btn" class="btn btn-primary" onclick="decryptPassword()" >Find Password</button>
+            <button type="button" id="btn" class="btn btn-primary" onclick="clearCompile()" >Clear</button>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
